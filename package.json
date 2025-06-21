@@ -1,0 +1,170 @@
+{
+  "name": "mex-project-site",
+  "version": "1.0.0",
+  "description": "Site oficial do Projeto Transformacional de Mauá - Desenvolvimento Sustentável e Infraestrutura Tecnológica",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "dev": "python3 -m http.server 3000",
+    "build": "echo 'Site estático - não requer build'",
+    "deploy": "./deploy.sh deploy",
+    "validate": "./deploy.sh validate",
+    "report": "./deploy.sh report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scoobiii/mex-project-site.git"
+  },
+  "keywords": [
+    "maua",
+    "sustentabilidade",
+    "datacenter",
+    "energia-solar",
+    "cripto-mexx",
+    "blockchain",
+    "mermaid",
+    "dashboard"
+  ],
+  "authors": [
+    {
+      "name": "MEX Energia",
+      "role": "Tecnologia e Energia",
+      "email": "contato@mex-energia.com"
+    },
+    {
+      "name": "Oliveira & Oliveira Advogados",
+      "role": "Jurídico e Regulatório"
+    },
+    {
+      "name": "Prefeitura de Mauá",
+      "role": "Institucional"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://scoobiii.github.io/mex-project-site/",
+  "dependencies": {
+    "mermaid": "^10.6.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.6.0"
+  },
+  "browserslist": [
+    "Chrome >= 80",
+    "Firefox >= 75",
+    "Safari >= 13",
+    "Edge >= 80"
+  ],
+  "config": {
+    "port": 8080,
+    "host": "localhost"
+  },
+  "project": {
+    "title": "Projeto Transformacional Mauá",
+    "subtitle": "Desenvolvimento Sustentável e Infraestrutura Tecnológica (2025-2033)",
+    "investment": "US$ 10 bilhões",
+    "duration": "2025-2033",
+    "partners": [
+      "MEX Energia",
+      "Oliveira & Oliveira Advogados",
+      "Prefeitura de Mauá"
+    ],
+    "components": [
+      "Complexo Multiuso",
+      "Datacenter Verticalizado",
+      "Torre Solar",
+      "Cripto Mexx"
+    ],
+    "phases": [
+      {
+        "id": 1,
+        "name": "Formalização",
+        "duration": "Meses 1-6",
+        "status": "in-progress"
+      },
+      {
+        "id": 2,
+        "name": "Desenvolvimento",
+        "duration": "Meses 7-12",
+        "status": "planned"
+      },
+      {
+        "id": 3,
+        "name": "Planejamento",
+        "duration": "Meses 13-24",
+        "status": "planned"
+      },
+      {
+        "id": 4,
+        "name": "Execução",
+        "duration": "A partir do Mês 25",
+        "status": "planned"
+      }
+    ],
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+",
+      "Mermaid.js",
+      "Responsive Design",
+      "Progressive Web App"
+    ],
+    "features": [
+      "Gráficos dinâmicos Mermaid",
+      "Interface responsiva",
+      "Navegação por abas",
+      "Integração com Dashboard MEX",
+      "Exportação de dados",
+      "Documentação completa"
+    ]
+  },
+  "deployment": {
+    "github-pages": {
+      "url": "https://scoobiii.github.io/mex-project-site/",
+      "branch": "main",
+      "directory": "/"
+    },
+    "local": {
+      "command": "python3 -m http.server 8080",
+      "url": "http://localhost:8080"
+    }
+  },
+  "documentation": {
+    "readme": "README.md",
+    "install": "INSTALL.md",
+    "deploy": "deploy.sh",
+    "api": "js/project-graphs.js"
+  },
+  "assets": {
+    "css": [
+      "css/dynamic-styles.css"
+    ],
+    "js": [
+      "js/project-graphs.js"
+    ],
+    "external": [
+      "https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"
+    ]
+  },
+  "seo": {
+    "title": "Projeto Transformacional Mauá - Desenvolvimento Sustentável",
+    "description": "Site oficial do Projeto Transformacional de Mauá, uma iniciativa de US$ 10 bilhões para desenvolvimento sustentável e infraestrutura tecnológica.",
+    "keywords": "Mauá, sustentabilidade, datacenter, energia solar, blockchain, desenvolvimento urbano",
+    "author": "MEX Energia, Oliveira & Oliveira Advogados, Prefeitura de Mauá"
+  },
+  "analytics": {
+    "google-analytics": "UA-XXXXXXXX-X",
+    "google-tag-manager": "GTM-XXXXXXX"
+  },
+  "social": {
+    "og:title": "Projeto Transformacional Mauá",
+    "og:description": "Desenvolvimento Sustentável e Infraestrutura Tecnológica (2025-2033)",
+    "og:image": "assets/images/projeto-maua-og.jpg",
+    "og:url": "https://scoobiii.github.io/mex-project-site/",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "Projeto Transformacional Mauá",
+    "twitter:description": "US$ 10 bilhões em desenvolvimento sustentável e tecnologia"
+  }
+}
+

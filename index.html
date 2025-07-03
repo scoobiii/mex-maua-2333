@@ -241,6 +241,64 @@
             color: #888;
         }
 
+        /* SWOT Specific Styles */
+        .swot-section {
+            margin-bottom: 30px;
+        }
+        .swot-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .swot-item {
+            margin-bottom: 10px;
+        }
+        .swot-item strong {
+            color: #2d2d2d;
+            font-weight: 700;
+        }
+        .swot-item span.score {
+            font-weight: 700;
+            margin-left: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: white;
+        }
+        .swot-item span.score.gov { background-color: #27ae60; } /* Green for Government */
+        .swot-item span.score.user { background-color: #3498db; } /* Blue for Users */
+        .swot-item span.score.biz { background-color: #D04A02; } /* Orange for Business */
+
+        /* Risk Analysis Specific Styles */
+        .risk-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .risk-table th, .risk-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        .risk-table th {
+            background-color: #f0f0f0;
+            font-weight: 600;
+            color: #555;
+        }
+        .risk-table td strong {
+            color: #D04A02;
+        }
+        .risk-level {
+            font-weight: 700;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: white;
+            display: inline-block;
+        }
+        .risk-level.low { background-color: #27ae60; } /* Green */
+        .risk-level.medium { background-color: #f39c12; } /* Orange */
+        .risk-level.high { background-color: #c0392b; } /* Red */
+
         @media (max-width: 768px) {
             .slide { padding: 30px; height: 90vh; }
             .mex-header { flex-direction: column; align-items: flex-start; }
@@ -252,16 +310,16 @@
 <body>
     <div class="presentation-container">
         <div class="slide-counter">
-            <span id="current-slide">1</span> de <span id="total-slides">7</span>
+            <span id="current-slide">1</span> de <span id="total-slides">9</span>
         </div>
 
         <!-- Slide 1: Capa -->
         <div class="slide active">
             <div class="mex-header">
-                <div class="mex-logo">mex<span>.</span></div>
+                <div class="mex-logo">mex.eco.br<span>.</span></div>
                 <div class="slide-title">Estratégia e Transformação</div>
             </div>
-            <h1>Projeto Mauá: Resiliência Climática e Presente Digital</h1>
+            <h1>Projeto Mauá: Resiliência Climática e Futuro Digital</h1>
             <h2>Uma Nova Economia para uma Nova Era</h2>
             <p>Uma proposta estratégica para transformar Mauá em um polo de resiliência para a economia digital global, combinando infraestrutura energética sustentável, inovação social e um marco de governança de ponta.</p>
             
@@ -273,8 +331,7 @@
                 <div class="info-card">
                     <h4>Parceiro Estratégico</h4>
                     <p>MEX Energia</p>
-                    </h4>
-                    <p>MEX Inteligencia</p>
+                      <p>MEX Inteligencia</p>
                     </h4>
                     <p>Oliveira & Oliveira Consultoria Empresarial</p>
                 </div>
@@ -311,9 +368,7 @@
             </div>
             <h1>US$ 20 Bilhões (1%) para Mauá</h1>
             <h2>Um Mandato de Investimento em Segurança Nacional</h2>
-            <p>Com a atração de US$ 2 trilhões em investimentos para o Brasil, a recuperação do grau de investimento se torna um mandato. Instituições como o BNDES e investidores privados são compelidos a direcionar uma fração desse capital (1% ou US$ 20 bilhões) para projetos que garantam a segurança e autonomia do país para o Project Finance type D.
-            
-            O Projeto Mauá 23/25/33 torna-se, assim, um investimento compulsório em infraestrutura crítica.</p>
+            <p>Com a atração de US$ 2 trilhões em investimentos para o Brasil, a recuperação do grau de investimento se torna um mandato. Instituições como o BNDES são compelidas a direcionar uma fração desse capital (1% ou US$ 20 bilhões) para projetos que garantam a segurança e autonomia do país. O Projeto Mauá torna-se, assim, um investimento compulsório em infraestrutura crítica.</p>
             <ul>
                 <li><strong>Segurança Energética:</strong> Autonomia com fontes renováveis e resilientes.</li>
                 <li><strong>Segurança Digital:</strong> Data centers de ponta (Mauá Tower) para proteger a economia digital.</li>
@@ -342,7 +397,7 @@
                 <div class="info-card">
                     <h4>Contrato de Parceria</h4>
                     <p>A minuta do acordo jurídico que estabelece as bases da colaboração público-privada, definindo papéis e responsabilidades.</p>
-                    <a href="https://github.com/scoobiii/mex-maua-2333/blob/main/docs/contrato-parceria.pdf" class="link" target="_blank">Ver Minuta</a>
+                    <a href="https://github.com/scoobiii/mex-maua-2333/blob/main/docs/contrato_parceria.pdf" class="link" target="_blank">Ver Minuta</a>
                 </div>
                 <div class="info-card">
                     <h4>Cronograma do Projeto</h4>
@@ -366,8 +421,7 @@
                 </div>
                 <div class="info-card">
                     <h4>Mauá Tower</h4>
-                    <p> Ícone da nova economia: complexo multiuso com Data Cloud & AI Server refrigerado a líquido, imune a choques climáticos. Evolução da Shanghai Tower, adaptado com data center vertical para reduzir o impacto diário de 20 mil pessoas. Submetido pela MEX Inteligência ao Prêmio Eco Amcham/Estadão 2017, recebeu nota 4,18 — com potencial de nota máxima após implementação, segundo os organizadores.
-</p>
+                    <p>O ícone da nova economia: um complexo multiuso com Data Cloud & AI Server de resfriamento líquido, imune a choques climáticos.</p>
                     <a href="https://grabcad.com/library/vertical-solar-marielle-tower-cultural-center-residencial-carmen-silva-hotel-preta-ferreira-1" class="link" target="_blank">Ver Conceito</a>
                 </div>
                 <div class="info-card">
@@ -396,16 +450,90 @@
             <div class="content-grid">
                 <div class="info-card">
                     <h4>A Força da Superação</h4>
-                    <p>Co-criada por <strong>João dos Santos Batista</strong>, Secretario de Energia Social, um sobrevivente da seca e do Complexo Boracéia que transforma sua experiência em força para reconstruir vidas.</p>
+                    <p>Co-criada por <strong>João dos Santos Batista</strong>, um sobrevivente do Complexo Boracéia que transforma sua experiência em força para reconstruir vidas.</p>
                 </div>
                 <div class="info-card">
                     <h4>A Visão de Futuro</h4>
-                    <p>Idealizada em Mauá por <strong>Edivaldo Beringela</strong>, Secretário de Projetos, impulsionado pela meta de colocar Mauá no top 10 do IDSC (Índice de Desafios da Sustentabilidade).</p>
+                    <p>Idealizada em Mauá por <strong>Edivaldo Beringela</strong>, Secretário de Projetos, com a meta de colocar Mauá no top 10 do IDSC (Índice de Desafios da Sustentabilidade).</p>
                 </div>
             </div>
         </div>
 
-        <!-- Slide 6: O Jogo Geopolítico da Energia -->
+        <!-- Slide 6: Análise SWOT -->
+        <div class="slide">
+            <div class="mex-header">
+                <div class="mex-logo">mex.eco.br<span>.</span></div>
+                <div class="slide-title">Análise Estratégica</div>
+            </div>
+            <h1>Análise SWOT: Data Centers e o Futuro de Mauá</h1>
+            <h2>Avaliando o Impacto para Governo, Usuários e Negócios (Notas de 1 a 3)</h2>
+            
+            <div class="swot-section">
+                <h3>Forças (Strengths)</h3>
+                <div class="swot-item">
+                    <strong>Proatividade Legislativa (PL Data Center):</strong> Demonstra visão de futuro e ambiente favorável.
+                    <span class="score gov">Gov: 3</span> <span class="score user">Usu: 2</span> <span class="score biz">Neg: 3</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Localização Estratégica (Mauá/Brasil):</strong> Resiliência climática e energética superior.
+                    <span class="score gov">Gov: 3</span> <span class="score user">Usu: 2</span> <span class="score biz">Neg: 3</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Ecossistema Integrado (Pilares do Projeto Mauá):</strong> Coesão e sinergias entre os projetos.
+                    <span class="score gov">Gov: 3</span> <span class="score user">Usu: 3</span> <span class="score biz">Neg: 3</span>
+                </div>
+            </div>
+
+            <div class="swot-section">
+                <h3>Fraquezas (Weaknesses)</h3>
+                <div class="swot-item">
+                    <strong>Burocracia e Morosidade na Aprovação do PL:</strong> Pode atrasar a implementação.
+                    <span class="score gov">Gov: 2</span> <span class="score user">Usu: 1</span> <span class="score biz">Neg: 3</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Capacidade de Execução da Prefeitura:</strong> Complexidade do projeto exige alta gestão.
+                    <span class="score gov">Gov: 2</span> <span class="score user">Usu: 1</span> <span class="score biz">Neg: 2</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Financiamento Inicial:</strong> Captação inicial pode ser um desafio.
+                    <span class="score gov">Gov: 2</span> <span class="score user">Usu: 1</span> <span class="score biz">Neg: 2</span>
+                </div>
+            </div>
+
+            <div class="swot-section">
+                <h3>Oportunidades (Opportunities)</h3>
+                <div class="swot-item">
+                    <strong>Demanda Global por Data Centers Resilientes:</strong> Crise climática no Norte cria urgência.
+                    <span class="score gov">Gov: 3</span> <span class="score user">Usu: 3</span> <span class="score biz">Neg: 3</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Recuperação do Grau de Investimento do Brasil:</strong> Facilita acesso a capital.
+                    <span class="score gov">Gov: 3</span> <span class="score user">Usu: 2</span> <span class="score biz">Neg: 3</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Inovação em Energia Renovável e Cooling:</strong> Posiciona Mauá na vanguarda.
+                    <span class="score gov">Gov: 3</span> <span class="score user">Usu: 2</span> <span class="score biz">Neg: 3</span>
+                </div>
+            </div>
+
+            <div class="swot-section">
+                <h3>Ameaças (Threats)</h3>
+                <div class="swot-item">
+                    <strong>Instabilidade Política/Econômica Nacional:</strong> Risco de descontinuidade.
+                    <span class="score gov">Gov: 3</span> <span class="score user">Usu: 3</span> <span class="score biz">Neg: 3</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Concorrência de Outras Regiões/Países:</strong> Pode diluir o diferencial.
+                    <span class="score gov">Gov: 2</span> <span class="score user">Usu: 1</span> <span class="score biz">Neg: 2</span>
+                </div>
+                <div class="swot-item">
+                    <strong>Desastres Naturais Locais:</strong> Custos inesperados e atrasos.
+                    <span class="score gov">Gov: 2</span> <span class="score user">Usu: 2</span> <span class="score biz">Neg: 1</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: O Jogo Geopolítico da Energia -->
         <div class="slide">
             <div class="mex-header">
                 <div class="mex-logo">mex.eco.br<span>.</span></div>
@@ -427,21 +555,96 @@
             </div>
             <a href="https://claude.ai/public/artifacts/a0e64ecc-4ca1-479b-b6d2-bc5dbdfff258" class="link" target="_blank">Ler Análise Geopolítica Completa</a>
         </div>
-
-        <!-- Slide 7: Próximos Passos e Contato -->
+        
+                <!-- Slide de Análise de Risco (Autônomo) -->
         <div class="slide">
             <div class="mex-header">
                 <div class="mex-logo">mex.eco.br<span>.</span></div>
-                <div class="slide-title">Conclusão e Chamada para Ação</div>
+                <div class="slide-title">Gestão de Riscos</div>
             </div>
-            <h1>Construindo o Presente, Juntos.</h1>
-            <h2>Formalizando o Investimento Estratégico</h2>
-            <p>Estamos prontos para avançar. Os próximos passos envolvem o alinhamento final com todos stackholders/investment/involved companies e as secretarias municipais para formalizar o contrato de parceria e Parceria Público-Privada e iniciar a execução do projeto que irá redefinir o futuro de Mauá e sua posição no cenário global.</p>
+            <h1>Análise de Risco do Projeto Mauá</h1>
+            <h2>Identificação e Classificação dos Principais Riscos</h2>
+            <p>Uma gestão proativa de riscos é essencial para o sucesso do Projeto Mauá. Abaixo, os principais riscos identificados, sua probabilidade (P), impacto (I) e nível de risco.</p>
             
-            <div class="status-box opportunity">
-                <strong>Status Atual:</strong> Tese de investimento validada. Estruturação técnica, jurídica e legislativa concluída. Pronto para avançar na implementação dos gates/fases FEL I,II e III, alocação de pessoas e capital.
+            <table class="risk-table">
+                <thead>
+                    <tr>
+                        <th>Risco</th>
+                        <th>P</th>
+                        <th>I</th>
+                        <th>Nível</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Instabilidade Política/Econômica Nacional</strong> (Projeto Geral)</td>
+                        <td>M</td>
+                        <td>A</td>
+                        <td><span class="risk-level high">Alto</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Burocracia e Morosidade Governamental</strong> (Projeto Geral)</td>
+                        <td>A</td>
+                        <td>M</td>
+                        <td><span class="risk-level high">Alto</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Não Aprovação/Descaracterização do PL Data Center</strong> (Inteligência Legislativa)</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td><span class="risk-level high">Alto</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Não Assinatura/Atraso na Formalização de Contratos</strong> (TAP, Contrato, Cronograma)</td>
+                        <td>M</td>
+                        <td>A</td>
+                        <td><span class="risk-level high">Alto</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Complexidade Tecnológica e de Engenharia</strong> (Mauá Tower)</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td><span class="risk-level medium">Médio</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custo Elevado de Construção e Manutenção</strong> (Mauá Tower)</td>
+                        <td>M</td>
+                        <td>A</td>
+                        <td><span class="risk-level high">Alto</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aprovação Regulatória da DAO</strong> (Mauá 100% Solar & DAO)</td>
+                        <td>A</td>
+                        <td>A</td>
+                        <td><span class="risk-level high">Alto</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dados Incompletos/Imprecisos</strong> (Mapa Energético, Retrofit, Biopolo)</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td><span class="risk-level medium">Médio</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Falta de Recursos/Engajamento</strong> (Secretaria de Energia Social)</td>
+                        <td>M</td>
+                        <td>M</td>
+                        <td><span class="risk-level medium">Médio</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">P: Probabilidade (B=Baixa, M=Média, A=Alta) | I: Impacto (B=Baixo, M=Médio, A=Alto)</p>
+        </div>
+
+
+        <!-- Slide 8: Próximos Passos e Chamado à Ação -->
+        <div class="slide">
+            <div class="mex-header">
+                <div class="mex-logo">mex.eco.br<span>.</span></div>
+                <div class="slide-title">Próximos Passos e Ação Imediata</div>
             </div>
-            
+            <h1>Da Estratégia à Execução</h1>
+            <h2>Refinamento e Resposta Emergencial</h2>
+            <p>Apresentamos um projeto robusto, com todos os entregáveis e minutas (legislativa, contratual, TAP, cronograma) prontos para serem refinados em conjunto com a equipe da Prefeitura. Estamos prontos para avançar.</p>
             
             <div class="status-box opportunity">
                 <strong>Ação Imediata: Resposta para o Jardim Zaíra</strong>
@@ -449,9 +652,9 @@
             </div>
 
             <div class="info-card" style="margin-top: 30px;">
-                <h4>Contato</h4>
-                <p><strong>José S. Sobrinho</strong><br>Diretor, MEX Energia</p>
-                <p style="margin-top: 10px;"><strong>Edivaldo Beringela</strong><br>Diretor, Oliveira & Oliveira Assessoria Empresarial</p>
+                <h4>Contato para Envio de Dados e Agendamentos</h4>
+                <p><strong>José S. Sobrinho</strong><br>CEO, MEX Energia</p>
+                <p style="margin-top: 10px;"><strong>Edivaldo Beringela</strong><br>Diretor Jurídico, Oliveira & Oliveira</p>
             </div>
         </div>
 

@@ -1,0 +1,34 @@
+/*
+ * SCRIPT DE EMISSÃO (MINT) DE ATIVOS
+ * Versão: 1.0
+ * Data: 22 de Julho de 2025
+ * Autor: GOS3 Team
+ * Descrição: Roteiro para criar a transação de emissão dos 100 NFTs MAUAX-G na Gnosis Safe.
+ */
+
+// Este script é um guia para a criação manual da transação na interface da Gnosis Safe.
+
+// 1. Acesse o Cofre (Gnosis Safe) da MEXX na rede Polygon.
+
+// 2. Vá para "New Transaction" -> "Contract interaction".
+
+// 3. Preencha os campos:
+//    - Contract Address: [Cole aqui o endereço do contrato MAUAX_G_ADDRESS]
+
+// 4. A interface da Gnosis Safe irá carregar a ABI do contrato. Selecione a função:
+//    - Função: `mintAllToTreasury`
+
+// 5. Preencha o parâmetro da função:
+//    - `treasuryAddress` (address): [Cole aqui o endereço da própria Gnosis Safe]
+
+// 6. Revise e submeta a transação.
+
+// 7. A transação ficará pendente, aguardando o número necessário de assinaturas (2 de 3).
+
+// 8. Os outros signatários devem acessar o cofre, revisar e assinar a transação.
+
+// 9. Após as assinaturas, qualquer pessoa pode executar a transação.
+
+// 10. RESULTADO: Os 100 NFTs MAUAX-G serão criados e estarão sob custódia da Gnosis Safe.
+
+console.log("Este é um roteiro para a Gnosis Safe. Siga as instruções no código.");

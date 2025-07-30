@@ -1,0 +1,54 @@
+/*
+ * SCRIPT DE CONFIGURAÇÃO DE GOVERNANÇA
+ * Versão: 1.0
+ * Data: 22 de Julho de 2025
+ * Autor: GOS3 Team
+ * Descrição: Transfere a propriedade dos contratos implantados para a Gnosis Safe da MEXX.
+ */
+
+const hre = require("hardhat");
+
+async function main() {
+    console.log("🚀 Iniciando configuração de governança na rede:", hre.network.name);
+    const [deployer] = await hre.ethers.getSigners();
+    console.log("Usando a conta do deployer:", deployer.address);
+
+    // --- ENDEREÇOS (❗ SUBSTITUIR PELOS ENDEREÇOS REAIS APÓS O DEPLOY) ---
+    const MAUAX_G_ADDRESS = "0x...";
+    const MAUAX_C_ADDRESS = "0x...";
+    const MAUAX_S_ADDRESS = "0x...";
+    const GNOSIS_SAFE_ADDRESS = "0x..."; // Endereço da Gnosis Safe da MEXX
+
+    // --- 1. Configurar MauaxFoundersNFT (MAUAX-G) ---
+    console.log(`\n[1/3] Transferindo propriedade do MAUAX-G (${MAUAX_G_ADDRESS})...`);
+    const mauaxFoundersNFT = await hre.ethers.getContractAt("MauaxFoundersNFT", MAUAX_G_ADDRESS);
+    let tx = await mauaxFoundersNFT.transferContractOwnership(GNOSIS_SAFE_ADDRESS);
+    await tx.wait();
+    console.log("✅ Propriedade transferida para a Gnosis Safe.");
+
+    // --- 2. Configurar MauaxUtilityToken (MAUAX-C) ---
+    console.log(`\n[2/3] Transferindo propriedade do MAUAX-C (${MAUAX_C_ADDRESS})...`);
+    const mauaxUtilityToken = await hre.ethers.getContractAt("MauaxUtilityToken", MAUAX_C_ADDRESS);
+    tx = await mauaxUtilityToken.transferContractOwnership(GNOSIS_SAFE_ADDRESS);
+    await tx.wait();
+    console.log("✅ Propriedade transferida para a Gnosis Safe.");
+    
+    // --- 3. Configurar MauaxSecurityToken (MAUAX-S) ---
+    console.log(`\n[3/3] Transferindo propriedade do MAUAX-S (${MAUAX_S_ADDRESS})...`);
+    const mauaxSolarToken = await hre.ethers.getContractAt("MauaxSecurityToken", MAUAX_S_ADDRESS);
+    // Nota: O contrato de Security Token usa AccessControl, então transferimos o DEFAULT_ADMIN_ROLE.
+    const ADMIN_ROLE = await mauaxSolarToken.DEFAULT_ADMIN_ROLE();
+    tx = await mauaxSolarToken.grantRole(ADMIN_ROLE, GNOSIS_SAFE_ADDRESS);
+    await tx.wait();
+    tx = await mauaxSolarToken.renounceRole(ADMIN_ROLE, deployer.address);
+    await tx.wait();
+    console.log("✅ Papel de Admin transferido para a Gnosis Safe.");
+
+    console.log("\n🏁 Configuração de governança concluída!");
+    console.log("➡️ Próximo passo: Execute '03-mint-assets.js' a partir da Gnosis Safe.");
+}
+
+main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});

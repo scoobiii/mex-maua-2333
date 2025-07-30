@@ -1,0 +1,47 @@
+/*
+ * SCRIPT DE IMPLANTAÇÃO (DEPLOY)
+ * Versão: 1.0
+ * Data: 22 de Julho de 2025
+ * Autor: GOS3 Team
+ * Descrição: Implanta os smart contracts principais do ecossistema MAUAX.
+ */
+
+const hre = require("hardhat");
+
+async function main() {
+    console.log("🚀 Iniciando implantação dos contratos MAUAX na rede:", hre.network.name);
+    const [deployer] = await hre.ethers.getSigners();
+    console.log("Usando a conta do deployer:", deployer.address);
+
+    // --- PARÂMETROS ---
+    const IPFS_BASE_URI_FOUNDERS = "ipfs://YOUR_FOUNDERS_METADATA_CID_HERE/"; // ❗ SUBSTITUIR
+    
+    // --- 1. MauaxFoundersNFT (MAUAX-G) ---
+    console.log("\n[1/3] Implantando MauaxFoundersNFT.sol...");
+    const MauaxFoundersNFT = await hre.ethers.getContractFactory("MauaxFoundersNFT");
+    const mauaxFoundersNFT = await MauaxFoundersNFT.deploy(IPFS_BASE_URI_FOUNDERS);
+    await mauaxFoundersNFT.deployed();
+    console.log("✅ Contrato MAUAX-G implantado em:", mauaxFoundersNFT.address);
+
+    // --- 2. MauaxUtilityToken (MAUAX-C) ---
+    console.log("\n[2/3] Implantando MauaxUtilityToken.sol...");
+    const MauaxUtilityToken = await hre.ethers.getContractFactory("MauaxUtilityToken");
+    const mauaxUtilityToken = await MauaxUtilityToken.deploy();
+    await mauaxUtilityToken.deployed();
+    console.log("✅ Contrato MAUAX-C implantado em:", mauaxUtilityToken.address);
+
+    // --- 3. MauaxSecurityToken (Template para MAUAX-S) ---
+    console.log("\n[3/3] Implantando MauaxSecurityToken.sol (como MAUAX-S)...");
+    const MauaxSecurityToken = await hre.ethers.getContractFactory("MauaxSecurityToken");
+    const mauaxSolarToken = await MauaxSecurityToken.deploy("MAUAX Solar Token", "MAUAX-S");
+    await mauaxSolarToken.deployed();
+    console.log("✅ Contrato MAUAX-S implantado em:", mauaxSolarToken.address);
+
+    console.log("\n🏁 Implantação concluída com sucesso!");
+    console.log("➡️ Próximo passo: Execute '02-setup-governance.js' para configurar a propriedade.");
+}
+
+main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+});

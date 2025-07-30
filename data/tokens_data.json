@@ -1,0 +1,101 @@
+[
+  {
+    "token_id": "1",
+    "name": "MAUAX Founder #001 - Pedra Fundamental",
+    "description": "Este NFT (MAUAX-G) representa a Pedra Fundamental do ecossistema MAUAX, simbolizando o início da parceria e a fundação da MAUAX DAO. Destinado à Prefeitura de Mauá.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'Prefeitura de Mauá'. On the bottom, write 'Founder\\'s Edition · #0001'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "Prefeitura de Mauá"}
+    ]
+  },
+  {
+    "token_id": "2",
+    "name": "MAUAX Founder #0002 - Consórcio Proponente",
+    "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à MEX Energia S.A., sócia fundadora do Consórcio Proponente.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'MEX Energia S.A.'. On the bottom, write 'Founder\\'s Edition · #0002'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "MEX Energia S.A."}
+    ]
+  },
+  {
+    "token_id": "3",
+    "name": "MAUAX Founder #0003 - Consórcio Proponente",
+    "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à MEX Energia S.A., sócia fundadora do Consórcio Proponente.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'MEX Energia S.A.'. On the bottom, write 'Founder\\'s Edition · #0003'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "MEX Energia S.A."}
+    ]
+  },
+  {
+    "token_id": "4",
+    "name": "MAUAX Founder #0004 - Consórcio Proponente",
+    "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à Oliveira & Oliveira Assessoria, sócia fundadora do Consórcio Proponente.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'Oliveira & Oliveira'. On the bottom, write 'Founder\\'s Edition · #0004'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "Oliveira & Oliveira"}
+    ]
+  },
+  {
+    "token_id": "5",
+    "name": "MAUAX Founder #0005 - Consórcio Proponente",
+    "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à Oliveira & Oliveira Assessoria, sócia fundadora do Consórcio Proponente.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'Oliveira & Oliveira'. On the bottom, write 'Founder\\'s Edition · #0005'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "Oliveira & Oliveira"}
+    ]
+  },
+  {
+    "token_id": "6",
+    "name": "MAUAX Founder #0006 - Gabinete do Vice-Prefeito",
+    "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado ao Gabinete do Vice-Prefeito de Mauá.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'Gabinete do Vice-Prefeito'. On the bottom, write 'Founder\\'s Edition · #0006'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "Gabinete do Vice-Prefeito"}
+    ]
+  },
+  {
+    "token_id": "7",
+    "name": "MAUAX Founder #0007 - Câmara Municipal",
+    "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à Presidência da Câmara Municipal de Mauá.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'Câmara Municipal de Mauá'. On the bottom, write 'Founder\\'s Edition · #0007'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "Câmara Municipal"}
+    ]
+  },
+  {
+    "token_id": "100",
+    "name": "MAUAX Founder #100 - Tesouraria da DAO",
+    "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' reservado para a Tesouraria da MAUAX DAO.",
+    "image_prompt": "Create a hyper-realistic 3D render of a commemorative medallion. It has a brushed stainless steel center disk and a translucent acrylic ring in the color 'Future Dusk' (#3E406D). The following text must be engraved on the metal, exactly as written: On the top, write 'MAUAX-G'. In the center, write 'Tesouraria da DAO'. On the bottom, write 'Founder\\'s Edition · #100'. The style is a professional product shot with studio lighting.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Founder's Edition"},
+      {"trait_type": "Tipo", "value": "Governança"},
+      {"trait_type": "Destinatário", "value": "Tesouraria da DAO"}
+    ]
+  },
+  {
+    "token_id": "SEED001",
+    "name": "MAUAX Seed Round NFT",
+    "description": "Este Security Token (ERC-721) representa a participação total na rodada de investimento de R$ 15 Milhões para a Fase 0 de estruturação do Projeto MAUAX.",
+    "image_prompt": "A hyper-realistic 3D render of a platinum and crystal medallion. In the center, the text 'MAUAX SEED' is engraved. Around the edge, the text 'R$ 15.000.000,00 - FASE 0'. The style is premium, financial, and secure, like a platinum credit card. Studio lighting, dark background.",
+    "attributes": [
+      {"trait_type": "Série", "value": "Seed Round"},
+      {"trait_type": "Tipo", "value": "Security Token"},
+      {"trait_type": "Valor", "value": "15.000.000 BRL"}
+    ]
+  }
+]

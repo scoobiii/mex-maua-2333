@@ -1,0 +1,20 @@
+{
+  "name": "MAUAX Seed Round NFT",
+  "description": "Este Security Token (ERC-721) representa a participação total na rodada de investimento de R$ 15 Milhões para a Fase 0 de estruturação do Projeto MAUAX.",
+  "image": "ipfs://YOUR_IMAGE_CID_HERE/SEED001.png",
+  "external_url": "https://app.mauex.com/token/SEED001",
+  "attributes": [
+    {
+      "trait_type": "Série",
+      "value": "Seed Round"
+    },
+    {
+      "trait_type": "Tipo",
+      "value": "Security Token"
+    },
+    {
+      "trait_type": "Valor",
+      "value": "15.000.000 BRL"
+    }
+  ]
+}

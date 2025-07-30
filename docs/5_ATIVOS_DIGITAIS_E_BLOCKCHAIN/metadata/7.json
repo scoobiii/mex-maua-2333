@@ -1,5 +1,20 @@
 {
-  "name": "MAUEX Founder #7",
-  "description": "Token de governança da serie fundadora do ecossistema MAUEX.",
-  "image": "ipfs://YourImageCID/7.png"
+  "name": "MAUAX Founder #0007 - Câmara Municipal",
+  "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à Presidência da Câmara Municipal de Mauá.",
+  "image": "ipfs://YOUR_IMAGE_CID_HERE/7.png",
+  "external_url": "https://app.mauex.com/token/7",
+  "attributes": [
+    {
+      "trait_type": "Série",
+      "value": "Founder's Edition"
+    },
+    {
+      "trait_type": "Tipo",
+      "value": "Governança"
+    },
+    {
+      "trait_type": "Destinatário",
+      "value": "Câmara Municipal"
+    }
+  ]
 }

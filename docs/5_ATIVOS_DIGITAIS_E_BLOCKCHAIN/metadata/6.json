@@ -1,5 +1,20 @@
 {
-  "name": "MAUEX Founder #6",
-  "description": "Token de governança da serie fundadora do ecossistema MAUEX.",
-  "image": "ipfs://YourImageCID/6.png"
+  "name": "MAUAX Founder #0006 - Gabinete do Vice-Prefeito",
+  "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado ao Gabinete do Vice-Prefeito de Mauá.",
+  "image": "ipfs://YOUR_IMAGE_CID_HERE/6.png",
+  "external_url": "https://app.mauex.com/token/6",
+  "attributes": [
+    {
+      "trait_type": "Série",
+      "value": "Founder's Edition"
+    },
+    {
+      "trait_type": "Tipo",
+      "value": "Governança"
+    },
+    {
+      "trait_type": "Destinatário",
+      "value": "Gabinete do Vice-Prefeito"
+    }
+  ]
 }

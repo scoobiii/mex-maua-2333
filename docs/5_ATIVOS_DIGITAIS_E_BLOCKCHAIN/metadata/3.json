@@ -1,5 +1,20 @@
 {
-  "name": "MAUEX Founder #3",
-  "description": "Token de governança da serie fundadora do ecossistema MAUEX.",
-  "image": "ipfs://YourImageCID/3.png"
+  "name": "MAUAX Founder #0003 - Consórcio Proponente",
+  "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à MEX Energia S.A., sócia fundadora do Consórcio Proponente.",
+  "image": "ipfs://YOUR_IMAGE_CID_HERE/3.png",
+  "external_url": "https://app.mauex.com/token/3",
+  "attributes": [
+    {
+      "trait_type": "Série",
+      "value": "Founder's Edition"
+    },
+    {
+      "trait_type": "Tipo",
+      "value": "Governança"
+    },
+    {
+      "trait_type": "Destinatário",
+      "value": "MEX Energia S.A."
+    }
+  ]
 }

@@ -1,5 +1,20 @@
 {
-  "name": "MAUEX Founder #5",
-  "description": "Token de governança da serie fundadora do ecossistema MAUEX.",
-  "image": "ipfs://YourImageCID/5.png"
+  "name": "MAUAX Founder #0005 - Consórcio Proponente",
+  "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' destinado à Oliveira & Oliveira Assessoria, sócia fundadora do Consórcio Proponente.",
+  "image": "ipfs://YOUR_IMAGE_CID_HERE/5.png",
+  "external_url": "https://app.mauex.com/token/5",
+  "attributes": [
+    {
+      "trait_type": "Série",
+      "value": "Founder's Edition"
+    },
+    {
+      "trait_type": "Tipo",
+      "value": "Governança"
+    },
+    {
+      "trait_type": "Destinatário",
+      "value": "Oliveira & Oliveira"
+    }
+  ]
 }

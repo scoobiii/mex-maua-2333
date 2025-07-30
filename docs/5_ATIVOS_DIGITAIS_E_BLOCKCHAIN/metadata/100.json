@@ -1,5 +1,20 @@
 {
-  "name": "MAUEX Founder #100",
-  "description": "Token de governança da serie fundadora do ecossistema MAUEX.",
-  "image": "ipfs://YourImageCID/100.png"
+  "name": "MAUAX Founder #100 - Tesouraria da DAO",
+  "description": "NFT de Governança (MAUAX-G) da série 'Founder's Edition' reservado para a Tesouraria da MAUAX DAO.",
+  "image": "ipfs://YOUR_IMAGE_CID_HERE/100.png",
+  "external_url": "https://app.mauex.com/token/100",
+  "attributes": [
+    {
+      "trait_type": "Série",
+      "value": "Founder's Edition"
+    },
+    {
+      "trait_type": "Tipo",
+      "value": "Governança"
+    },
+    {
+      "trait_type": "Destinatário",
+      "value": "Tesouraria da DAO"
+    }
+  ]
 }

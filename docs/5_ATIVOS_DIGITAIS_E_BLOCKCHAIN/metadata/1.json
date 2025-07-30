@@ -1,5 +1,20 @@
 {
-  "name": "MAUEX Founder #1",
-  "description": "Token de governança da serie fundadora do ecossistema MAUEX.",
-  "image": "ipfs://YourImageCID/1.png"
+  "name": "MAUAX Founder #001 - Pedra Fundamental",
+  "description": "Este NFT (MAUAX-G) representa a Pedra Fundamental do ecossistema MAUAX, simbolizando o início da parceria e a fundação da MAUAX DAO. Destinado à Prefeitura de Mauá.",
+  "image": "ipfs://YOUR_IMAGE_CID_HERE/1.png",
+  "external_url": "https://app.mauex.com/token/1",
+  "attributes": [
+    {
+      "trait_type": "Série",
+      "value": "Founder's Edition"
+    },
+    {
+      "trait_type": "Tipo",
+      "value": "Governança"
+    },
+    {
+      "trait_type": "Destinatário",
+      "value": "Prefeitura de Mauá"
+    }
+  ]
 }

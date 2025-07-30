@@ -1,1 +1,0 @@
-# Placeholder para 0.1_PROJETO_DE_LEI_MAUEX_CONSOLIDADO.pdf

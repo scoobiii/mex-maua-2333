@@ -1,0 +1,25 @@
+{
+    "name": "MAUAX Founder #0001",
+    "description": "Token f\u00edsico gravado a laser com QR Code, alusivo \u00e0 Pedra Fundamental da Prefeitura de Mau\u00e1.",
+    "external_url": "https://example.com/nft/mauax-founder-0001?hash=3c212df409ce578997fd9f1eaac280c40e9d002035e3287ac1ac77a318e1f3f4",
+    "image": "ipfs://<hash-da-imagem>",
+    "hash": "3c212df409ce578997fd9f1eaac280c40e9d002035e3287ac1ac77a318e1f3f4",
+    "attributes": [
+        {
+            "trait_type": "S\u00e9rie",
+            "value": "#0001"
+        },
+        {
+            "trait_type": "Categoria",
+            "value": "Fundador"
+        },
+        {
+            "trait_type": "Material",
+            "value": "Inox + Vidro"
+        },
+        {
+            "trait_type": "Inscri\u00e7\u00e3o",
+            "value": "MAUAX Founder #0001 \u2013 Pedra Fundamental"
+        }
+    ]
+}

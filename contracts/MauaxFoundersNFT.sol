@@ -25,12 +25,6 @@ contract MauaxFoundersNFT is ERC721, ERC721Enumerable, Ownable {
 
     constructor() ERC721("MAUAX Governance Token", "MAUAX-G") Ownable(msg.sender) {}
 
-    /**
-     * @notice Cria (minta) um novo NFT de governança e o atribui a um endereço.
-     * @dev Apenas o dono do contrato (Gnosis Safe / DAO) pode chamar esta função.
-     * A emissão é limitada pela constante MAX_SUPPLY.
-     * @param to O endereço que receberá o novo NFT.
-     */
     function safeMint(address to) external onlyOwner {
         require(_tokenIdCounter.current() < MAX_SUPPLY, "MAUAX-G: Max supply reached");
         
@@ -39,7 +33,6 @@ contract MauaxFoundersNFT is ERC721, ERC721Enumerable, Ownable {
         _safeMint(to, tokenId);
     }
 
-    // As funções a seguir são overrides necessários devido à herança de ERC721 e ERC721Enumerable.
     function _beforeTokenTransfer(address from, address to, uint256 tokenId, uint256 batchSize)
         internal
         override(ERC721, ERC721Enumerable)
